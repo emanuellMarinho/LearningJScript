@@ -1,13 +1,10 @@
 /**
- * For específico para objetos iteráveis, como: string, arrays
+ * For clássico - geralmente usado com iteráveis (arrays ou strings)
+ * For in - retorna o índice ou chave (string, array ou objeto)
+ * ForOf - retorna o valor em si (iteráveis, arrays ou strings)
  * */
 
-
 const nome = 'Emanuel'
-
-// for (let i = 0; i < nomeDeus.length; i++) {
-//     console.log(nomeDeus[i])
-// }
 
 for (let i in nome) {
     console.log(nome[i])
