@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+
+    .section-one {
+        /* background-color: deeppink; */
+        background-image: url(https://oecdenvironmentfocusblog.files.wordpress.com/2020/06/wed-blog-shutterstock_1703194387_low_nwm.jpg);
+        background-position: center center; /* a imagem fica alinhada ao centro dentro da caixa*/
+        background-size: cover;  /*se ajusta dentro da caixa*/
+        color: #fff;
+        width: 250px;
+        height: 50px;
+        /* border: 5px solid black; */
+        border-style: solid;
+        /* border-width: 0 => top, 0 => right, 0 => bottom, 0 => left; */
+        border-width: 10px;
+        border-bottom-color: firebrick;
+        border-top-color: yellow;
+        border-right-color: green;
+        border-left-color: blue;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .section-two {
+        background-color: cyan;
+        width: 250px;
+        height: 50px;
+        border: 5px solid black;
+        padding: 15px;
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <section class="section-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</section>
+    <section class="section-two">2</section>
+</body>
+
+</html>
