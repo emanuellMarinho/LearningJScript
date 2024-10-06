@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="">
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nomes" placeholder="Seu nome">
+        </p>
+        <p>
+            <label for="dev1">Sou um Dev1</label>
+            <input type="checkbox" id="dev1" value="sim" checked required><br>
+
+            <label for="dev2">Sou um Dev2</label>
+            <input type="checkbox" id="dev2" value="sim" checked required><br>
+
+            <label for="dev3">Sou um Dev3</label>
+            <input type="checkbox" id="dev3" value="sim" checked required><br>
+        </p>
+        <p>
+            Gênero: <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+            <label for="outros">Outros</label>
+            <input type="radio" id="dev3" name="genero" value="outros"><br>
+        </p>
+        <p>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" value="2004-03-11">
+        </p>
+        <p>
+            <label for="datetime">Data:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2004-03-11T20:00">
+        </p>
+        <p>
+            <label for="time">Data:</label>
+            <input type="time" id="time" name="time" value="20:00:01">
+        </p>
+        <p>
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="ex: email@email.com">
+        </p>
+        <p>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" accept=".png, .svg, image/*" multiple>
+        </p>
+        <p>
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número" min="10" max="50" step="5">
+        </p>
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="100%">
+            </datalist>
+        </p>
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Sua URL">
+        </p>
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+        <p>
+            <label for="select">Selecione alguma opção:</label>
+            <select name="select" id="select" multiple>
+                <optgroup label="Teste">
+                    <option value="1" selected>Valor1</option>
+                    <option value="2" disabled>Valor2</option>
+                    <option value="3">Valor3</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea name="textarea" id="textarea" rows="3" cols="9">
+            </textarea>
+        </p>
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>
